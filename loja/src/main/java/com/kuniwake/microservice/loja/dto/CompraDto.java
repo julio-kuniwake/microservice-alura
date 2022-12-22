@@ -2,6 +2,7 @@ package com.kuniwake.microservice.loja.dto;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.util.List;
 
@@ -10,5 +11,4 @@ import java.util.List;
 public class CompraDto {
     private List<ItemCompraDto> itens;
     private EnderecoDto endereco;
-
 }

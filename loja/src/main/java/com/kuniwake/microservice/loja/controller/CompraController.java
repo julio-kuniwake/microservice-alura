@@ -1,5 +1,6 @@
 package com.kuniwake.microservice.loja.controller;
 
+import com.kuniwake.microservice.loja.domaim.model.Compra;
 import com.kuniwake.microservice.loja.dto.CompraDto;
 import com.kuniwake.microservice.loja.service.CompraService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +17,8 @@ public class CompraController {
     private CompraService compraService;
 
     @PostMapping
-    public void realizaCompra(@RequestBody CompraDto compraDto){
-        compraService.realizaCompra(compraDto);
+    public Compra realizaCompra(@RequestBody CompraDto compraDto){
+        return compraService.realizaCompra(compraDto);
 
     }
 }

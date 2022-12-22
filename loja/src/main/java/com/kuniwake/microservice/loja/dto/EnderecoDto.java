@@ -9,4 +9,13 @@ public class EnderecoDto {
     private String rua;
     private int numero;
     private String estado;
+
+    @Override
+    public String toString() {
+        return "EnderecoDto{" +
+                "rua='" + rua + '\'' +
+                ", numero=" + numero +
+                ", estado='" + estado + '\'' +
+                '}';
+    }
 }
