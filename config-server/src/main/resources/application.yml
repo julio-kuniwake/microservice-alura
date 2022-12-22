@@ -2,11 +2,10 @@ server:
   port: 8888
 
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: C:\Pasta de config MS
+        git:
+          uri: https://github.com/julio-kuniwake/microservice-alura
+          search-paths: fornecedor
 
